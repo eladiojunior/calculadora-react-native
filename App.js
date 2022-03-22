@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, SafeAreaView } from 'react-native';
 import Button from './src/componentes/Button';
 import Display from './src/componentes/Display';
 
@@ -65,7 +65,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <View styles={styles.container}>
+      <SafeAreaView styles={styles.container}>
         <Display valor={this.state.displayValue}></Display>
         <View style={styles.buttons}>
           <Button label="AC" isTriple={true} onClick={this.clearMemory} />
@@ -86,7 +86,7 @@ export default class App extends Component {
           <Button label="." onClick={() => this.addValue('.')} />
           <Button label="=" isOperation={true} onClick={() => this.setOperation('=')} />
         </View>
-      </View>
+      </SafeAreaView>
     );
   }
 }
