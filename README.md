@@ -2,7 +2,7 @@
 
 Projeto de uma Calculadora utilizado React Native, estudos sobre desenvolvimento Mobile.
 
-## Como rodar os exemplos
+## Como rodar os exemplos (Android)
 
 1. Instalar o Emulador AndroidStudio;
 2. Instalar o NodeJs;
@@ -11,3 +11,17 @@ Projeto de uma Calculadora utilizado React Native, estudos sobre desenvolvimento
 ```
 ./react-native run-android
 ```
+
+## Como rodar os exemplos (iOS)
+
+1. Instalar o XCode;
+2. Acessar pasta ../ios;
+3. Executar:
+```
+pod install
+```
+4. Executar:
+```
+npx react-native run-ios
+```
+
